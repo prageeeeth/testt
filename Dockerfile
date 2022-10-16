@@ -1,4 +1,6 @@
-FROM node:8
+FROM alpine:3.10
+
+RUN apk add --update nodejs npm
 
 # Create app directory
 WORKDIR /usr/src/app
